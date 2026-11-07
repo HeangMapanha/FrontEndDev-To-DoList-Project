@@ -1,15 +1,18 @@
 import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
 import './App.css'
+import { AuthProvider } from './context/AuthContext'
+import { LoginPage } from './pages/Login'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <aside class="sidebar">
+
+      <LoginPage/>
+
+      
+      {/* <aside class="sidebar">
         <div class="sidebar-logo">
           <h2>AppLogo</h2>
         </div>
@@ -27,7 +30,7 @@ function App() {
           <button type="button" id="theme-toggle">Toggle Dark Mode</button>
           <button type="button" class="btn-logout">Log Out</button>
         </div>
-      </aside>
+      </aside> */}
     </>
   )
 }
